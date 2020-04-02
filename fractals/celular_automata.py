@@ -5,7 +5,7 @@ import time
 image = st.empty()
 
 
-
+size = st.slider('Population size', 100, 10000, 500)
 
 def get_at(array, index, default):
     if index < 0: index += len(array)
@@ -23,16 +23,14 @@ def get_state(arr, position):
     return 0
 
 
-size = 300
 array = np.zeros([size, size], dtype=np.uint8)
 array[0] = list(map(lambda x: 0 if x < 0.5 else 255, np.random.rand(size, 1)))
 
 for i in range(0, size):
-    time.sleep(0.1)
     for j in range(0, size):
         array[i+1,j] = get_state(array[i], j)
 
-    image.image(array, use_column_width=True)
+    image.image(array)
 
 
 st.button("Re-run")
