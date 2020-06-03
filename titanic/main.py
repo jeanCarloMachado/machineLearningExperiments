@@ -1,10 +1,30 @@
 import streamlit as st
 import pandas as pd
 import grimoire as g
+import grimoire.time as t
 
 """
-# Understanding the training data
+# Titanic challenge
 
+## Steps
+ - Clean the data
+    Encode other features to fit the model
+"""
+
+
+"""
+## Understanding the training data
+
+
+"""
+train = pd.read_csv('train.csv')
+with st.echo():
+    st.write(train.sample(n=5))
+    st.write(train.describe())
+
+train = train.fillna(method='ffill')
+
+"""
 Website [with description](https://www.kaggle.com/c/titanic/data?select=test.csv)
 
 - Not everybody has an age defined
@@ -30,32 +50,30 @@ Parent = mother, father
 Child = daughter, son, stepdaughter, stepson
 Some children travelled only with a nanny, therefore parch=0 for them.
 
-"""
-train = pd.read_csv('train.csv')
-
-st.write(train.sample(n=5))
-st.write(train.describe())
-
-train = train.fillna(method='ffill')
-
-"""
 ---
 
-## Approaching the problem with a Naive Random forest
 
-### prepare the data
+## Prepare the data
 """
 from sklearn.ensemble import RandomForestClassifier
 
 y = train['Survived']
-ignored_cols = ['Survived', 'Cabin', 'Embarked', 'Name', 'PassengerId', 'PClass', 'Sex', 'SibSp', 'Ticket']
-X = train[train.columns.difference(ignored_cols)]
 
+with st.echo():
+    def cleanup_df(df):
+        ignored_cols = ['Survived', 'Cabin', 'Embarked', 'Name', 'PassengerId', 'PClass', 'SibSp', 'Ticket']
+        df = df[df.columns.difference(ignored_cols)]
+        df['Sex'] = df['Sex'].map(lambda x: 0 if x == 'male' else 1)
+        return df.fillna(method='ffill')
+
+X = cleanup_df(train)
 X
 
 
 
 """
+## Approaching the problem with a Naive Random forest
+
 ### Fit the data
 """
 with st.echo():
@@ -65,27 +83,31 @@ with st.echo():
 
 """
 ### Test Data raw
+
+The test data does not contain if the passenger survived or not
 """
 
 
 test = pd.read_csv('test.csv')
 test
 
-passenger_ids =test['PassengerId'].copy()
-test = test[train.columns.difference(ignored_cols)]
-test = test.fillna(method='ffill')
+passenger_ids = test['PassengerId'].copy()
+test = cleanup_df(test)
+"""
+### Cleaned test data
+"""
 
 test
 
 """
 ### Prediction
+[Make submission here](https://www.kaggle.com/c/titanic/data?select=test.csv)
 """
-result_array = clf.predict(test)
-result_df = pd.DataFrame(result_array, columns=['Survived'])
 
-result = pd.concat([passenger_ids, result_df ], axis=1)
+with st.echo():
+    result_array = clf.predict(test)
+    result_df = pd.DataFrame(result_array, columns=['Survived'])
+    result = pd.concat([passenger_ids, result_df ], axis=1)
+    result.to_csv(f'results/prediciton_results_{t.Date.now_str(datetime_format=True)}.csv', index=False)
 
 result
-
-
-result.to_csv(f'results/prediciton_results_{g.now_str()}.csv', index=False)
