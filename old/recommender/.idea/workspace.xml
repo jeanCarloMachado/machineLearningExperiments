@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0703c9e6-7581-4be3-9477-4f4707e93385" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../simple_gradient" beforeDir="false" afterPath="$PROJECT_DIR$/../simple_gradient" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="JupyterTrust" id="a4114300-1c13-4668-a79e-2ff2dc61303e" />
+  <component name="ProjectId" id="1fX4RgBiSTdKmUe5Doh5o7QW1no" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunManager">
+    <configuration name="streamlit.cli" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="recommender" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <EXTENSION ID="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" />
+        </ENTRIES>
+      </EXTENSION>
+      <option name="SCRIPT_NAME" value="streamlit.cli" />
+      <option name="PARAMETERS" value="run $PROJECT_DIR$/main.py" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="true" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0703c9e6-7581-4be3-9477-4f4707e93385" name="Default Changelist" comment="" />
+      <created>1596351098174</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1596351098174</updated>
+      <workItem from="1596351102401" duration="2793000" />
+      <workItem from="1596354214833" duration="2952000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="93" y="211" width="1084" height="708" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596354652773">
+      <screen x="0" y="27" width="2560" height="1053" />
+    </state>
+    <state x="93" y="211" width="1084" height="708" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.2560.1053@0.27.2560.1053" timestamp="1596354652773" />
+    <state width="1236" height="348" key="GridCell.Tab.0.bottom" timestamp="1596357185388">
+      <screen x="0" y="27" width="2560" height="1053" />
+    </state>
+    <state width="1236" height="348" key="GridCell.Tab.0.bottom/0.27.2560.1053@0.27.2560.1053" timestamp="1596357185388" />
+    <state width="1236" height="348" key="GridCell.Tab.0.center" timestamp="1596357185387">
+      <screen x="0" y="27" width="2560" height="1053" />
+    </state>
+    <state width="1236" height="348" key="GridCell.Tab.0.center/0.27.2560.1053@0.27.2560.1053" timestamp="1596357185387" />
+    <state width="1236" height="348" key="GridCell.Tab.0.left" timestamp="1596357185386">
+      <screen x="0" y="27" width="2560" height="1053" />
+    </state>
+    <state width="1236" height="348" key="GridCell.Tab.0.left/0.27.2560.1053@0.27.2560.1053" timestamp="1596357185386" />
+    <state width="1236" height="348" key="GridCell.Tab.0.right" timestamp="1596357185388">
+      <screen x="0" y="27" width="2560" height="1053" />
+    </state>
+    <state width="1236" height="348" key="GridCell.Tab.0.right/0.27.2560.1053@0.27.2560.1053" timestamp="1596357185388" />
+    <state width="1236" height="348" key="GridCell.Tab.1.bottom" timestamp="1596357185389">
+      <screen x="0" y="27" width="2560" height="1053" />
+    </state>
+    <state width="1236" height="348" key="GridCell.Tab.1.bottom/0.27.2560.1053@0.27.2560.1053" timestamp="1596357185389" />
+    <state width="1236" height="348" key="GridCell.Tab.1.center" timestamp="1596357185389">
+      <screen x="0" y="27" width="2560" height="1053" />
+    </state>
+    <state width="1236" height="348" key="GridCell.Tab.1.center/0.27.2560.1053@0.27.2560.1053" timestamp="1596357185389" />
+    <state width="1236" height="348" key="GridCell.Tab.1.left" timestamp="1596357185388">
+      <screen x="0" y="27" width="2560" height="1053" />
+    </state>
+    <state width="1236" height="348" key="GridCell.Tab.1.left/0.27.2560.1053@0.27.2560.1053" timestamp="1596357185388" />
+    <state width="1236" height="348" key="GridCell.Tab.1.right" timestamp="1596357185389">
+      <screen x="0" y="27" width="2560" height="1053" />
+    </state>
+    <state width="1236" height="348" key="GridCell.Tab.1.right/0.27.2560.1053@0.27.2560.1053" timestamp="1596357185389" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/recommender$main.coverage" NAME="streamlit.cli Coverage Results" MODIFIED="1596355423011" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>
